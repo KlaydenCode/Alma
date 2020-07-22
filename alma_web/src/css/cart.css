@@ -1,0 +1,57 @@
+@font-face { font-family: Poppins-Medium;
+ 			 src: url('./font/Poppins-Medium.ttf');}
+@font-face { font-family: MontserratSubrayada-Bold;
+			 src: url('./font/MontserratSubrayada-Bold.ttf');}
+
+.header{
+  position:relative;
+  padding: 0.1%;
+  vertical-align: top;
+  text-align:center;
+  background:#5553E4;
+  color:white;
+  /* font-size:4vw; */
+  font-family: MontserratSubrayada-Bold;
+  z-index:999;
+}
+
+#cart_button,
+#cart_button a:link,
+#cart_button a:hover,
+#cart_button a:active,
+#cart_button a:visited{
+  color:white !important;
+}
+
+.bi-bag-check{
+  color:white !important;
+  position:absolute;
+  top:20%;
+  right:5%;
+}
+
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:visited,
+.btn-primary:focus {
+  background:#5553E4 !important;
+  font-family:Poppins-Medium;
+}
+
+.btn-lg{
+  position:absolute;
+  padding: 10px 85px !important;
+  font-size: 20px;
+  border-radius: 10px !important;
+  position:sticky;
+  margin-top: 35%;
+  margin-left: 40%;
+}
+
+#mytable {
+  position:absolute;
+  width:75% !important;
+  top:25%;
+  margin-left:10%;
+}

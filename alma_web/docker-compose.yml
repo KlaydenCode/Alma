@@ -1,0 +1,28 @@
+version: '2'
+services:
+    mysql:
+      image: mysql:5.7
+      container_name: mysql-server-80
+      # command: --default-authentification-plugin=mysql_native_password
+      command: --explicit_defaults_for_timestamp
+      volumes:
+        - .:/var/lib/mysql-files
+      restart: always
+      environment:
+        - MYSQL_ROOT_PASSWORD=myrootpwd
+        - MYSQL_DATABASE=MYSQL_DATABASE
+        - MYSQL_USER=db_user
+        - MYSQL_PASSWORD=mypwd
+      ports:
+        - "8082:3306"
+    website:
+      container_name: myPHP
+      image: tut:php_img
+      build:
+        context: ./
+      volumes:
+        - ./src:/var/www/html
+      ports:
+        - 8000:80
+      depends_on:
+        - mysql

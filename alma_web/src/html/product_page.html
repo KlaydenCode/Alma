@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Product page</title>
+  <link rel="stylesheet" type="text/css" href="../css/product_page.css">
+  <link rel="stylesheet" href="https://fonts.google.com/specimen/Montserrat+Subrayada?sidebar.open&selection.family=Montserrat+Subrayada:wght@700#standard-styles" />
+</head>
+<script src="../js/vue.js"></script>
+
+<body>
+  <div id="header">
+    <div class="container">
+      <div class="row">
+    {{ message }}
+      </div>
+    </div>
+  </div>
+  <!-- <div class="slideshow-container"> -->
+    <!-- <div class="product_img"> -->
+    <!-- </div> -->
+  <!-- </div> -->
+
+  <!-- <div class="slideshow-container">
+    <div class="product_img">
+      <img src="../img/KB1.jpg" style="width:100%">
+    </div>
+
+    <div class="product_img">
+      <img src="../img/KB2.jpg" style="width:100%">
+    </div>
+
+    <div class="product_img">
+      <img src="../img/KB3.jpg" style="width:100%">
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1, 0)">&#10095;</a> -->
+
+    <!-- Dots for images slideshow -->
+    <!-- <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+  </div> -->
+  <br>
+
+  <script>
+    var header = new Vue({
+      el: '#header',
+      data: {
+        message: 'Welcome to the new platform !'
+      }
+    })
+
+    // Images slideshow
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("product_img");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+    }
+
+  </script>
+
+</body>
+</html>

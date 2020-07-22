@@ -1,0 +1,29 @@
+@font-face { font-family: MontserratSubrayada-Bold;
+			 src: url('./font/MontserratSubrayada-Bold.ttf');}
+
+.header{
+  position:relative;
+  padding: 0.1%;
+  vertical-align: top;
+  text-align:center;
+  background:#5553E4;
+  color:white;
+  font-size:1.5vw;
+  font-family: MontserratSubrayada-Bold;
+  z-index:999;
+}
+
+#cart,
+#cart_button a:link,
+#cart_button a:hover,
+#cart_button a:active,
+#cart_button a:active {
+  color:white !important;
+}
+
+.bi-bag-check{
+	color:white !important;
+  position:absolute;
+  top:20%;
+  right:5%;
+}

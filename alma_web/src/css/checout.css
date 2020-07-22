@@ -1,0 +1,88 @@
+@font-face { font-family: Poppins-Medium;
+ 			 src: url('./font/Poppins-Medium.ttf');}
+@font-face { font-family: MontserratSubrayada-Bold;
+			 src: url('./font/MontserratSubrayada-Bold.ttf');}
+
+.header{
+  position:relative;
+  padding: 0.1%;
+  vertical-align: top;
+  text-align:center;
+  background:#5553E4;
+  color:white;
+  font-size:1.5vw;
+  font-family: MontserratSubrayada-Bold;
+  z-index:999;
+}
+
+#cart_button,
+#cart_button a:link,
+#cart_button a:hover,
+#cart_button a:active,
+#cart_button a:visited{
+  color:white !important;
+}
+
+.bi-bag-check{
+  color:white !important;
+  position:absolute;
+  top:20%;
+  right:5%;
+}
+
+.formulaire{
+  position:absolute;
+  width: 50%;
+  margin-left: 10%;
+  top:30%;
+}
+
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:visited,
+.btn-primary:focus {
+  background:#5553E4 !important;
+  font-family:Poppins-Medium;
+}
+
+.btn-lg{
+  padding: 10px 85px !important;
+  font-size: 20px;
+  border-radius: 10px !important;
+  position:sticky;
+  margin-top: 5%;
+  margin-left: 40%;
+}
+
+.alert{
+  color:red;
+  font-size:40px;
+  font-family: Poppins-Medium;
+}
+
+.form_title{
+  position:absolute;
+  margin-left: 10%;
+  font-size:20px;
+  font-family: Poppins-Medium;
+}
+
+#mybtn{
+  padding: 10px 85px !important;
+  font-size: 20px;
+  border-radius: 10px !important;
+  position:absolute;
+  margin-top: 15%;
+  margin-left: 125%;
+}
+
+.p_cart {
+  position:absolute;
+  padding: 10px 85px;
+  top: 10%;
+  margin-left: 105%;
+  font-size: 20px;
+  display: inline-block;
+  white-space: nowrap;
+}

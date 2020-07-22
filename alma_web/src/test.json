@@ -1,0 +1,6 @@
+{
+  "payment": {
+    "purchase_amount": 120000,
+    "installments_counts": [3, 4]
+  }
+}
